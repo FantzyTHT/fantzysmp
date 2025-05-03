@@ -3,30 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <title>FantzySMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
-      text-align: center;
-      padding: 40px;
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
+
     img {
       max-width: 100%;
       height: auto;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
+
     .description {
-      max-width: 600px;
-      margin: 20px auto;
-      background-color: #2a2a2a;
-      padding: 20px;
-      border-radius: 10px;
+      background-color: #1e1e1e;
+      padding: 30px 40px;
+      margin: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+      text-align: center;
     }
+
+    .description h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .description p {
+      font-size: 1.05em;
+      line-height: 1.6em;
+      margin: 12px 0;
+    }
+
     .ip {
-      font-weight: bold;
-      margin-top: 15px;
+      font-weight: 600;
       font-size: 1.1em;
+      margin-top: 20px;
       color: #ffffff;
+    }
+
+    .map-button {
+      margin-top: 25px;
+    }
+
+    .map-button button {
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .map-button button:hover {
+      background-color: #1976d2;
+      transform: translateY(-2px);
+    }
+
+    .map-button button:active {
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -35,9 +84,15 @@
 
   <div class="description">
     <h1>Welcome to FantzySMP</h1>
-    <p>A cozy and friendly survival Minecraft server with <strong>proximity voice chat</strong>.</p>
-    <p>Whether you're building something cool, chatting with neighbors, or just looking for a place to relax and play, this is the perfect spot. Come say hi and make yourself at home!</p>
-    <div class="ip">IP: play.fantzysmp.xyz</div>
+    <p>FantzySMP is a growing Minecraft server offering <strong>Survival</strong>, <strong>Creative</strong>, and more exciting modes coming soon.</p>
+    <p>Enjoy a friendly community, build your dreams, and chat using <strong>proximity voice chat</strong> for a more immersive multiplayer experience.</p>
+    <div class="ip">IP: <span style="color:#4fc3f7;">play.fantzysmp.xyz</span></div>
+
+    <div class="map-button">
+      <button onclick="window.location.href='http://play.fantzysmp.xyz:8000'">
+        View Live Map
+      </button>
+    </div>
   </div>
 </body>
 </html>
