@@ -44,6 +44,11 @@
       color: #fff;
     }
 
+    textarea {
+      resize: none;
+      overflow-y: auto;
+    }
+
     button {
       padding: 0.75rem;
       font-size: 1rem;
@@ -69,21 +74,22 @@
       color: #3399ff;
     }
 
-    textarea {
-      resize: none;
-      overflow-y: auto;
-    }
-
     .checkbox-group {
       display: flex;
       gap: 1rem;
       margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     input[type="radio"] {
       width: 20px;
       height: 20px;
-      margin-top: 0.5rem;
       cursor: pointer;
     }
 
@@ -108,19 +114,23 @@
 </head>
 <body>
   <h1>Ban Appeal Form</h1>
+
   <form id="appeal-form">
     <label>
       Minecraft Username:
       <input type="text" name="username" required>
     </label>
+
     <label>
       Reason for Ban:
       <input type="text" name="reason" required>
     </label>
+
     <label>
       Why Should You Be Unbanned?:
       <textarea name="appeal" rows="6" required></textarea>
     </label>
+
     <label>
       Will you do it again?:
       <div class="checkbox-group">
@@ -135,11 +145,12 @@
         </label>
       </div>
     </label>
+
     <button type="submit">Submit Appeal</button>
   </form>
 
   <!-- Always visible Back to Main Page button -->
-  <button class="back-button" onclick="window.location.href='index.html'">
+  <button class="back-button" onclick="window.location.href='https://www.fantzysmp.xyz'">
     ⬅ Back to Main Page
   </button>
 
