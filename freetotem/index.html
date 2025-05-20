@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Claim Free Totem</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: none;
+    }
+
+    #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    #playButton {
+      background-color: #2196f3;
+      color: white;
+      font-size: 1.9rem;
+      font-weight: 400;
+      text-transform: none; /* normal case */
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+      letter-spacing: 1.5px;
+      text-shadow: none;
+      box-shadow: none;
+      outline-offset: 2px;
+      outline: none;
+    }
+
+    #playButton:hover {
+      background-color: #1976d2;
+      transform: translateY(-4px);
+    }
+
+    #playButton:active {
+      background-color: #155a9c;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <button id="playButton">Claim Free Totem</button>
+  </div>
+  <video id="video" src="video.mp4" loop></video>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    const playButton = document.getElementById('playButton');
+    const video = document.getElementById('video');
+
+    playButton.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      video.style.display = 'block';
+      video.play().catch(e => console.error("Autoplay failed:", e));
+    });
+  </script>
+</body>
+</html>
