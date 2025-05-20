@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>FantzySMP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="icon" href="icon.png" type="image/png">
   <style>
     body {
@@ -69,6 +69,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
+      text-transform: none;
     }
 
     .map-button button:hover {
@@ -108,13 +109,21 @@
   </style>
 </head>
 <body>
-  <img src="server_banner.png" alt="FantzySMP Banner">
+  <img src="server_banner.png" alt="FantzySMP Banner" />
 
   <div class="description">
     <h1>Welcome to FantzySMP</h1>
-    <p>FantzySMP is a growing Minecraft server offering <strong>Survival</strong>, <strong>Creative</strong>, and more exciting modes coming soon.</p>
-    <p>Enjoy a friendly community, build your dreams, and chat using <strong>proximity voice chat</strong> for a more immersive multiplayer experience.</p>
-    <div class="ip">IP: <span style="color:#4fc3f7;">play.fantzysmp.xyz</span></div>
+    <p>
+      FantzySMP is a growing Minecraft server offering
+      <strong>Survival</strong>, <strong>Creative</strong>, and more exciting modes coming soon.
+    </p>
+    <p>
+      Enjoy a friendly community, build your dreams, and chat using
+      <strong>proximity voice chat</strong> for a more immersive multiplayer experience.
+    </p>
+    <div class="ip">
+      IP: <span style="color:#4fc3f7;">play.fantzysmp.xyz</span>
+    </div>
 
     <div class="map-button">
       <button onclick="window.location.href='http://play.fantzysmp.xyz:8000'">
@@ -123,17 +132,33 @@
     </div>
 
     <div class="map-button">
-      <button onclick="window.location.href='/appeal'">
-        Appeal a Ban
-      </button>
+      <button onclick="window.location.href='/appeal'">Appeal a Ban</button>
     </div>
 
     <!-- Discord Button -->
-    <div class="discord-button" onclick="window.open('https://discord.gg/8vgzx9hNMu', '_blank')">
+    <div class="discord-button" onclick="window.open('https://discord.gg/AbvFxrDZch', '_blank')">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55">
-        <path d="M60.104 4.552A58.488 58.488 0 0046.852.8a.117.117 0 00-.124.06 40.692 40.692 0 00-1.884 3.864 55.233 55.233 0 00-16.744 0 40.421 40.421 0 00-1.9-3.864.117.117 0 00-.123-.06 58.527 58.527 0 00-13.252 3.75.108.108 0 00-.051.043C1.577 19.235-.99 33.388.28 47.419a.128.128 0 00.048.087 59.74 59.74 0 0017.963 9.13.118.118 0 00.127-.042 42.248 42.248 0 003.644-5.918.117.117 0 00-.065-.169 38.876 38.876 0 01-5.595-2.662.118.118 0 01-.011-.195c.375-.281.75-.57 1.108-.863a.116.116 0 01.121-.012c11.78 5.386 24.57 5.386 36.278 0a.116.116 0 01.122.011c.358.294.733.583 1.109.864a.118.118 0 01-.01.195 36.886 36.886 0 01-5.597 2.661.117.117 0 00-.064.17 47.076 47.076 0 003.643 5.917.118.118 0 00.127.043 59.72 59.72 0 0017.964-9.13.117.117 0 00.047-.087c1.526-15.909-2.58-30.003-11.861-42.824a.086.086 0 00-.05-.044zM23.725 37.175c-3.538 0-6.453-3.234-6.453-7.203 0-3.968 2.873-7.202 6.453-7.202 3.597 0 6.496 3.252 6.453 7.202 0 3.969-2.873 7.203-6.453 7.203zm23.507 0c-3.538 0-6.453-3.234-6.453-7.203 0-3.968 2.873-7.202 6.453-7.202 3.597 0 6.496 3.252 6.453 7.202 0 3.969-2.856 7.203-6.453 7.203z"/>
+        <path
+          d="M60.104 4.552A58.488 58.488 0 0046.852.8a.117.117 0 00-.124.06 40.692 40.692 0 00-1.884 3.864 55.233 55.233 0 00-16.744 0 40.421 40.421 0 00-1.9-3.864.117.117 0 00-.123-.06 58.527 58.527 0 00-13.252 3.75.108.108 0 00-.051.043C1.577 19.235-.99 33.388.28 47.419a.128.128 0 00.048.087 59.74 59.74 0 0017.963 9.13.118.118 0 00.127-.042 42.248 42.248 0 003.644-5.918.117.117 0 00-.065-.169 38.876 38.876 0 01-5.595-2.662.118.118 0 01-.011-.195c.375-.281.75-.57 1.108-.863a.116.116 0 01.121-.012c11.78 5.386 24.57 5.386 36.278 0a.116.116 0 01.122.011c.358.294.733.583 1.109.864a.118.118 0 01-.01.195 36.886 36.886 0 01-5.597 2.661.117.117 0 00-.064.17 47.076 47.076 0 003.643 5.917.118.118 0 00.127.043 59.72 59.72 0 0017.964-9.13.117.117 0 00.047-.087c1.526-15.909-2.58-30.003-11.861-42.824a.086.086 0 00-.05-.044zM23.725 37.175c-3.538 0-6.453-3.234-6.453-7.203 0-3.968 2.873-7.202 6.453-7.202 3.597 0 6.496 3.252 6.453 7.202 0 3.969-2.873 7.203-6.453 7.203zm23.507 0c-3.538 0-6.453-3.234-6.453-7.203 0-3.968 2.873-7.202 6.453-7.202 3.597 0 6.496 3.252 6.453 7.202 0 3.969-2.856 7.203-6.453 7.203z"
+        />
       </svg>
     </div>
   </div>
+
+  <a
+    href="/freetotem"
+    style="
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      user-select: none;
+    "
+    >?</a
+  >
 </body>
 </html>
